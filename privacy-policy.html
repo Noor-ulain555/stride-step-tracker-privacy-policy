@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Stride</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #ffffff;
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .6rem; letter-spacing: -.01em; }
+  h3 { font-size: 1.02rem; margin: 1.4rem 0 .4rem; }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  a { color: #0b7a4b; }
+  .meta { color: #666; font-size: .92rem; margin: 0 0 1.5rem; }
+  .lead { font-size: 1.06rem; }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; display: block; overflow-x: auto; }
+  th, td { border: 1px solid #ddd; padding: .55rem .7rem; text-align: left; vertical-align: top; font-size: .95rem; }
+  th { background: #f4f6f5; }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 2.5rem 0; }
+  .footer { color: #777; font-size: .88rem; }
+  code { background: #f1f1f1; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #4ade80; }
+    .meta, .footer { color: #9a9a9a; }
+    th { background: #1e1e1e; }
+    th, td { border-color: #333; }
+    code { background: #1e1e1e; }
+    hr { border-top-color: #2a2a2a; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy for Stride</h1>
+  <p class="meta">Last updated: 17 September 2026</p>
+
+  <p class="lead">
+    This Privacy Policy explains how the <strong>Stride</strong> mobile application
+    (the &ldquo;App&rdquo;, package name <code>com.technoorstudio.stride</code>) handles
+    information. Stride is a step and activity tracker developed by
+    <strong>TechNoor Studio</strong> (the &ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;).
+    We are committed to protecting your privacy and being transparent about the limited
+    data the App uses.
+  </p>
+
+  <p>
+    Stride is designed to work <strong>locally on your device</strong>. Your step history
+    and personal settings stay on your phone. We do not operate our own servers and we do
+    not sell your personal data.
+  </p>
+
+  <h2>1. Information stored on your device</h2>
+  <p>
+    The following information is created and stored <strong>only on your device</strong>
+    (in the App&rsquo;s local database and private app settings). It is never uploaded to us
+    or shared with third parties:
+  </p>
+  <ul>
+    <li><strong>Step activity data</strong> — your daily step counts, per-day step history, streaks, and active walking time.</li>
+    <li><strong>Body weight (kg)</strong> — optional, entered by you and used solely to estimate calories burned.</li>
+    <li><strong>Goals &amp; preferences</strong> — your daily step goal, walk-time goal, daily reminder time, chosen accent colour, and onboarding status.</li>
+  </ul>
+  <p>
+    This data is used to display your progress, calculate distance and calories, drive the
+    home-screen widget, and send the reminders and goal alerts you enable. Uninstalling the
+    App permanently removes all of this locally stored data from your device.
+  </p>
+
+  <h2>2. Device sensors and permissions</h2>
+  <p>The App requests the following Android permissions, each for a specific purpose:</p>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Why it is used</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Physical activity (<code>ACTIVITY_RECOGNITION</code>)</td>
+        <td>To read your device&rsquo;s built-in step-counter sensor so the App can count your steps. Step readings are processed on-device only.</td>
+      </tr>
+      <tr>
+        <td>Foreground service &amp; health service<br>(<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_HEALTH</code>)</td>
+        <td>To keep counting steps in the background via an ongoing notification, without you needing to keep the App open.</td>
+      </tr>
+      <tr>
+        <td>Notifications (<code>POST_NOTIFICATIONS</code>)</td>
+        <td>To show the ongoing step-counter notification, optional daily reminders, and the walk-goal alarm.</td>
+      </tr>
+      <tr>
+        <td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+        <td>To resume step tracking automatically after your device restarts.</td>
+      </tr>
+      <tr>
+        <td>Exact alarms (<code>SCHEDULE_EXACT_ALARM</code>)</td>
+        <td>To deliver your chosen daily reminder at the correct time.</td>
+      </tr>
+      <tr>
+        <td>Internet &amp; network state<br>(<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td>
+        <td>To load ads and send anonymous analytics and crash reports through the third-party services described below.</td>
+      </tr>
+      <tr>
+        <td>Advertising ID (<code>AD_ID</code>)</td>
+        <td>Used by Google AdMob to serve ads. See section 3.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Step-counter and step-detector hardware sensors are optional, so the App remains usable
+    on devices that do not have them.
+  </p>
+
+  <h2>3. Third-party services</h2>
+  <p>
+    The App uses the following third-party services provided by Google. These services may
+    collect information as described in their own privacy policies. We do not receive or
+    store your personal health data on any server.
+  </p>
+
+  <h3>Google AdMob (advertising)</h3>
+  <p>
+    Stride displays ads (app-open, interstitial, and native ads) supplied by Google AdMob.
+    AdMob may access your device&rsquo;s <strong>advertising identifier (Advertising ID)</strong>
+    and related information to serve and measure ads. You can reset or limit your Advertising ID
+    in your device&rsquo;s settings under <em>Google &rarr; Ads</em>.
+  </p>
+
+  <h3>Google Firebase Analytics (usage analytics)</h3>
+  <p>
+    We use Firebase Analytics to understand, in an aggregated and anonymous way, how the App
+    is used — for example which screens are opened and how often. This helps us improve the
+    App. It does <strong>not</strong> include your step history, weight, or other personal
+    health data.
+  </p>
+
+  <h3>Google Firebase Crashlytics (crash reporting)</h3>
+  <p>
+    We use Firebase Crashlytics to automatically collect crash reports and diagnostic
+    information (such as the type of error and device/OS details) when the App crashes or
+    encounters a handled error. This helps us find and fix stability problems.
+  </p>
+
+  <p>For more information about how Google handles data collected through these services, see:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a></li>
+  </ul>
+
+  <h2>4. How your information is used</h2>
+  <ul>
+    <li>To count your steps and display your daily and 7-day activity, distance, active time, and estimated calories.</li>
+    <li>To provide reminders, goal alerts, and the home-screen widget.</li>
+    <li>To display advertising through Google AdMob.</li>
+    <li>To measure App usage anonymously and to fix crashes, so we can improve the App.</li>
+  </ul>
+
+  <h2>5. Data sharing and sale</h2>
+  <p>
+    We do <strong>not</strong> sell your personal data. Your on-device step history, weight,
+    and settings are never transmitted to us. The only data leaving your device is the
+    anonymous analytics, crash diagnostics, and advertising data handled by the Google
+    services described in section 3, in accordance with Google&rsquo;s policies.
+  </p>
+
+  <h2>6. Data retention</h2>
+  <p>
+    Data stored on your device remains until you delete it within the App (for example by
+    resetting your day) or until you uninstall the App. Data processed by Google&rsquo;s
+    services is retained according to Google&rsquo;s own retention policies.
+  </p>
+
+  <h2>7. Children&rsquo;s privacy</h2>
+  <p>
+    Stride is not directed to children under the age of 13, and we do not knowingly collect
+    personal information from children. If you believe a child has provided us with personal
+    information, please contact us so we can address it.
+  </p>
+
+  <h2>8. Your choices and rights</h2>
+  <ul>
+    <li>You can decline or revoke the Physical activity and Notification permissions in your device settings at any time (some features will stop working).</li>
+    <li>You can reset or limit ad personalisation via your device&rsquo;s Advertising ID settings.</li>
+    <li>You can delete all locally stored data by uninstalling the App.</li>
+  </ul>
+
+  <h2>9. Security</h2>
+  <p>
+    Your activity data and settings are stored in the App&rsquo;s private storage area on your
+    device, which is not accessible to other apps under normal Android security. No method of
+    electronic storage or transmission is completely secure, but we take reasonable measures
+    to protect your information.
+  </p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. Changes will be posted on this page
+    with an updated &ldquo;Last updated&rdquo; date. Continued use of the App after changes
+    means you accept the revised policy.
+  </p>
+
+  <h2>11. Contact us</h2>
+  <p>
+    If you have any questions about this Privacy Policy or the App, please contact us at:<br>
+    <a href="mailto:noorulain9590@gmail.com">noorulain9590@gmail.com</a>
+  </p>
+
+  <hr>
+  <p class="footer">
+    Stride &mdash; developed by TechNoor Studio. This policy applies to the Stride Android
+    application (<code>com.technoorstudio.stride</code>).
+  </p>
+
+</div>
+</body>
+</html>
